@@ -1,0 +1,199 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box; /* Делает ограничения размеров элементов по их границе */
+    scroll-behavior: smooth;
+    overflow-anchor: none; /* Запоминает положение на странице и после обновления автоматически прокручивает к тому же элементу */
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    background-color: rgb(36, 36, 39);
+    height: 900px;
+}
+
+.conteiner{
+    margin: 0 auto;
+}
+
+.nav_menu{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 130px;
+    margin-right: 103px;
+    padding-top: 40px;
+}
+
+.nav_menu_list{
+    display: flex;
+}
+
+.nav_menu_link{
+    margin-left: 170px;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 700;
+    transition: 0.5s ease;
+}
+
+.nav_menu_link:hover{
+    font-size: 22px;
+    color: bisque;
+    transition: 1s ease;
+}
+
+.telo1{
+    margin-left: 130px;
+    display: flex;
+    align-items: center;
+}
+
+.list_item1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.list_item2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 700;
+    background: linear-gradient(to right, #003ACE, #CE0094);
+    color: transparent; /* Делает так, что фоновый цвет видно только за текстом */
+    background-clip: text; /* Гарантирует, что фон не выйдет за пределы границ текста(букв) */
+    -webkit-background-clip: text; /* Гарантирует, что фон не выйдет за пределы границ текста(букв) */
+    margin-top: 110px;
+    margin-bottom: 100px;
+}
+
+.bt_list{
+    width: 200px;
+    height: 62px;
+    background: linear-gradient(to right, #53498F, #D95583);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 250;
+    color: #FFFFFF;
+}
+
+.osn_foto2{
+    margin-left: -20px;
+    overflow: hidden; /* Скрывает все что выходит за пределы контейнера в котором указано действие */
+}
+
+.main{
+    background-color: rgb(36, 36, 39);
+}
+
+.telo2{
+    max-width: 1600px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.telo2_text{
+    width: 1030px;
+    height: 625px;
+    margin-left: 320px;
+}
+
+.telo2_text1{
+    margin-bottom: 20px;
+}
+
+.text, .text1{
+    font-family: 'Ruda', sans-serif;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-indent: 25px; /* Задает отступ первой строки/Красная строка */
+}
+
+.text1:first-letter{
+    color: #FF0000;
+}
+
+.telo3{
+    max-width: 1600px;
+    margin: auto;
+}
+
+.telo3_zag{
+    font-family: 'Ruda', sans-serif;
+    font-size: 50px;
+    line-height: 61px;
+    font-weight: 800; 
+}
+
+.zag_telo3{
+    background: linear-gradient(to bottom right, #003ACE 40%, #FF0000 88%);
+    color: transparent; /* Делает так, что фоновый цвет видно только за текстом */
+    background-clip: text; /* Гарантирует, что фон не выйдет за пределы границ текста(букв) */
+    -webkit-background-clip: text;
+    width: 270px;
+    margin-left: 160px;
+    margin-bottom: 120px;
+}
+
+.list_foto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 50px;
+}
+
+.telo3_list_foto{
+    width: 1100px;
+    margin-left: 350px;
+    padding-bottom: 50px;
+}
+
+.footer{
+    background-color: rgb(36, 36, 39);
+    /* Не получилось сделать так как на дизайнерском проекте градиентом.
+    подскажите как это можно реализовать? */
+}
+
+.footer_text1{
+font-family: 'Ruda', sans-serif;
+font-size: 15px;
+line-height: 18px;
+font-weight: 600;
+color: rgb(255, 255, 255);
+}
+
+.footer_text{
+    padding-top: 120px;
+    margin-left: 320px;
+}
+
+.footer_seti{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 100px;
+}
+
+.footer_seti_icon{
+    margin-right: 50px;
+}
